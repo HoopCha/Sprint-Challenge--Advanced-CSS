@@ -214,6 +214,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .home .intro .topimage {
   border-radius: 10px;
