@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive responds to the size of the screen no matter what, adapatice uses static layouts based on breakpoints.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+If you build your website to be mobile friendly first then work towards desktop, or vise versa.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It means that 1rem is equal to 10px which makes the math easy. So to achieve 16 px, its 1.6rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Its like CSS+, it adds the ability to add things like variables and 'functions' to your code, as well as nesting.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like variables the most, if used well, they can save a lot of time. Mix ins still give me a bit of trouble
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
