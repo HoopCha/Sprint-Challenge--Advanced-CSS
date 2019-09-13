@@ -165,7 +165,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6ec;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 @media (max-width: 500px) {
   header {
@@ -214,6 +217,7 @@ footer {
 }
 .home .intro .topimage {
   border-radius: 10px;
+  margin-top: 120px;
 }
 @media (max-width: 500px) {
   .home .intro .topimage {
