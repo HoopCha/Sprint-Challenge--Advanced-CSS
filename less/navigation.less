@@ -1,1 +1,35 @@
 // Navigation code here
+header {
+    .custom-layout(center, center);
+    flex-direction: column;
+    background-color: @nav-bg;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+
+    @media @phone {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;  
+    }
+    h1 {
+        .bodyFont(@nav-font, 5rem);
+        padding: 15px;
+        @media @phone {
+        .bodyFont(@nav-font, 4rem);
+        }
+    }
+    nav {
+        padding-bottom: 15px;
+        .custom-layout(space-around, center);
+        width: 26%;
+        @media @phone {
+            width:80%;
+        }
+        a {
+            text-decoration: none;
+            .bodyFont(@nav-font, 1.8rem);
+        }
+    }
+
+}
