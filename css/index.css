@@ -167,10 +167,23 @@ header {
   flex-direction: column;
   background-color: #F6F6F6;
 }
+@media (max-width: 500px) {
+  header {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 header h1 {
   color: #454A59;
   font-size: 5rem;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    color: #454A59;
+    font-size: 4rem;
+  }
 }
 header nav {
   padding-bottom: 15px;
@@ -178,6 +191,11 @@ header nav {
   justify-content: space-around;
   align-items: center;
   width: 26%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 80%;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -197,6 +215,12 @@ footer {
 .home .intro .topimage {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .intro .topimage {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -214,6 +238,18 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    margin: 20px 5%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -230,8 +266,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 30px;
+    padding: 20px 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -255,9 +304,34 @@ footer {
   background-color: lavender;
   color: #23293B;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: block;
+    background-color: #23293B;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 95%;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: lavender;
+    font-family: 'Ubuntu', sans-serif;
+    height: 70px;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: lavender;
+    color: #23293B;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    padding-bottom: 15px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
