@@ -1,24 +1,19 @@
 // Navigation code here
 header {
-    display: flex;
+    .custom-layout(center, center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: @nav-bg;
-    color: @nav-font;
     h1 {
-        font-size: 5rem;
+        .bodyFont(@nav-font, 5rem);
         padding: 15px;
     }
     nav {
         padding-bottom: 15px;
-        display:flex;
-        justify-content: space-around;
+        .custom-layout(space-around, center);
         width: 26%;
         a {
             text-decoration: none;
-            color: @nav-font;
-            font-size: 1.8rem;
+            .bodyFont(@nav-font, 1.8rem);
         }
     }
 

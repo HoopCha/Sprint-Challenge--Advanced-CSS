@@ -162,13 +162,13 @@ p {
 }
 header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #F6F6F6;
-  color: #454A59;
 }
 header h1 {
+  color: #454A59;
   font-size: 5rem;
   padding: 15px;
 }
@@ -176,6 +176,7 @@ header nav {
   padding-bottom: 15px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 26%;
 }
 header nav a {
@@ -192,6 +193,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .topimage {
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -234,6 +238,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: #23293B;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 130px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: lavender;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: lavender;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;

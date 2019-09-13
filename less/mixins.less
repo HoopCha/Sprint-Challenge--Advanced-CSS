@@ -1,1 +1,29 @@
 // Mixins Here
+.custom-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+
+  .bodyFont(@fontcolor, @fontSize){
+    color:@fontcolor;
+    font-size:@fontSize;
+  }
+
+  .custom-btn(@bgcolor, @width, @font-color){
+    display: block;
+    background-color: @bgcolor;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 5px;
+    color:@font-color;
+    font-family: 'Ubuntu', sans-serif;
+    
+    &:hover{
+      background-color:@font-color;
+      color:@bgcolor;
+    }
+}
